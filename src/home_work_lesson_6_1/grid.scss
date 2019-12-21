@@ -216,15 +216,3 @@ $breakpoint-small: 480px !default;
     }
   } // end @for
 } // end @each
-
-// All direct descendents of .grid get treated the same way.
-// This might be overkill for some, but it's a time-saver for me.
-
-// Removes gutters from the columns
-.#{$grid-namespace}--no-gutter {
-  margin-left: 0;
-
-  .#{$grid-column-namespace} {
-    padding-left: 0;
-  }
-}
