@@ -83,7 +83,7 @@ const baseConf = () => {
            * Pass along the updated reference to your code
            * You can add here any file extension you want to get copied to your output
            */
-          test: /\.(png|jpg|jpeg|gif|svg)$/,
+          test: /\.(png|jpg|jpeg|gif|svg|webp)$/,
           loader: "file-loader?publicPath=./&name=assets/images/[name].[ext]"
         },
         {
