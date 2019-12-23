@@ -10,8 +10,8 @@
     width: 100%;
     border: none;
     font-size: 1rem;
-    padding: 15px;
     text-align: center;
+    padding: 15px;
     background-color: rgba(255, 255, 255, 0.4);
     transition: all 0.3s;
   }
@@ -23,9 +23,9 @@
       top: 0;
       left: 0;
       opacity: 0;
-      transform: scale(0);
-      visibility: hidden;
+      transform: scale(1);
       transition: all 0.3s;
+      visibility: hidden;
     }
   }
   &:hover {
@@ -42,20 +42,19 @@
       }
     }
   }
+
   &__footer {
-    background: #fff;
+    background-color: #fff;
     padding-top: 15px;
   }
-
   &__title {
-    font-size: 1.5rem;
-    padding-bottom: 8px;
+    font-size: 1.06rem;
   }
-
   &__price {
     margin-top: 5px;
   }
 }
+
 .price {
   display: flex;
   justify-content: flex-start;
@@ -66,13 +65,11 @@
     }
   }
   &_sale {
-    display: block;
     .price__title_regular {
       text-decoration: line-through;
       color: #696969;
     }
-
-    .price__title-sale {
+    .price__title_sale {
       display: inherit;
     }
   }

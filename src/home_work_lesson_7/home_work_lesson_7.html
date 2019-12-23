@@ -14,10 +14,11 @@
     <script src="http://localhost:35729/livereload.js"></script>
     <title key="title"></title>
   </head>
+
   <body>
     <div class="page">
       <header class="page-header">
-        <div class="header-delivery wrapper">
+        <div class="header-delivery container">
           <ul class="delivery__list ">
             <li class="list__item">БЕСПЛАТНАЯ ДОСТАВКA</li>
             <li class="list__item"><i class=" fas fa-shopping-bag"></i></li>
@@ -25,154 +26,284 @@
         </div>
       </header>
       <nav class="page-nav">
-        <div class="wrapper">
-          <ul class="navigation grid">
-            <li class="navigation-item col-2">
-              <div class="navigation__logo">ВЕСТА</div>
-            </li>
-            <li class="navigation__item col-2">
-              <a href="#" class="navigation-link"> ГЛАВНАЯ</a>
-            </li>
-            <li class="navigation__item col-2">
-              <a href="#" class="navigation-link">КОЛЛЕКЦИИ</a>
-            </li>
-            <li class="navigation__item col-2">
-              <a href="#" class="navigation-link">Лукбук</a>
-            </li>
-            <li class="navigation__item col-2">
-              <a href="#" class="navigation-link">Помощь клиентам</a>
-            </li>
-            <li class="navigation__item col-2">
-              <a href="#" class="navigation-link">адрес</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navigation container">
+          <li class="navigation__item col-2">
+            <div class="navigation__logo">ВЕСТА</div>
+          </li>
+          <li class="navigation__item col-2">
+            <a href="#" class="navigation-link"> ГЛАВНАЯ</a>
+          </li>
+          <li class="navigation__item col-2">
+            <a href="#" class="navigation-link">КОЛЛЕКЦИИ</a>
+          </li>
+          <li class="navigation__item col-2">
+            <a href="#" class="navigation-link">Лукбук</a>
+          </li>
+          <li class="navigation__item col-2">
+            <a href="#" class="navigation-link">Помощь клиентам</a>
+          </li>
+          <li class="navigation__item col-2">
+            <a href="#" class="navigation-link">адрес</a>
+          </li>
+        </ul>
       </nav>
       <main class="page-content">
         <header class="content-header">
           <span>МУЖСКОЙ ОТДЕЛ</span>
         </header>
-        <div class="gallery grid wrapper">
-          <div class="gallery__item gallery__item--discount col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="./images/1.jpg" alt="" class="gallery-image" />
-            </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price gallery__price--discount">
-                1 499,25
+        <div class="page-container product-list grid grid--no-gutter container">
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product product--sale">
+              <div class="product__content product__content--sale">
+                <img src="./images /5.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /1.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
               </div>
+              <footer class="product__footer">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price price_sale">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
             </div>
           </div>
-          <div class="gallery__item gallery__item--discount col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="./images/2.jpg" alt="" class="gallery-image" />
-            </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price">1 999,00</div>
-            </div>
-          </div>
-          <div class="gallery__item gallery__item--discount col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="./images/3.jpg" alt="" class="gallery-image" />
-            </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price gallery__price--discount">
-                1 499,25
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product ">
+              <div class="product__content">
+                <img src="./images /6.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /2.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
               </div>
+              <footer class="product__footer">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price ">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
             </div>
           </div>
-          <div class="gallery__item col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="./images/4.jpg" alt="" class="gallery-image" />
-            </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price gallery__price--discount">
-                1 499,25
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product product--sale">
+              <div class="product__content">
+                <img src="./images /7.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /3.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
               </div>
+              <footer class="product__footer">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price price_sale">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
             </div>
           </div>
-          <div class="gallery__item col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="./images/5.jpg" alt="" class="gallery-image" />
-            </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price">1 999,00</div>
-            </div>
-          </div>
-          <div class="gallery__item col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="./images/6.jpg" alt="" class="gallery-image" />
-            </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price">1 999,00</div>
-            </div>
-          </div>
-          <div class="gallery__item col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="images/7.jpg" alt="" class="gallery-image" />
-            </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price">$1 999,00</div>
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product">
+              <div class="product__content">
+                <img src="./images /8.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /4.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
+              </div>
+              <footer class="product__footer">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price ">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
             </div>
           </div>
-          <div class="gallery__item col-3 col-sm-6">
-            <div class="gallery__block-image">
-              <img src="./images/8.jpg" alt="" class="gallery-image" />
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product product--sale">
+              <div class="product__content">
+                <img src="./images /5.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /5.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
+              </div>
+              <footer class="product__footer class">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price price_sale">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
             </div>
-            <div class="gallery__description">
-              <h3 class="gallery__title">Ваш товар</h3>
-              <div class="gallery__price">$ 4 500,00</div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product">
+              <div class="product__content">
+                <img src="./images /6.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /6.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
+              </div>
+              <footer class="product__footer">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price ">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product">
+              <div class="product__content">
+                <img src="./images /7.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /7.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
+              </div>
+              <footer class="product__footer">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <div class="col-3 col-md-4 col-sm-12 product-list__item">
+            <div class="product">
+              <div class="product__content">
+                <img src="./images /8.12.webp" alt="" class="product__image" />
+                <img
+                  src="./images /4.webp"
+                  alt=""
+                  class="product__image product__image_scaled"
+                />
+                <button class="product__preview-control">
+                  Быстрый просмотр
+                </button>
+              </div>
+              <footer class="product__footer">
+                <div class="product__title">Ваш товар</div>
+                <div class="product__price price">
+                  <span class="price__title price__title_regular"
+                    >$1 999,00</span
+                  >
+                  <span class="price__title price__title_sale">$99,00</span>
+                </div>
+              </footer>
             </div>
           </div>
         </div>
       </main>
       <footer class="page-footer">
-        <div class="wrapper">
-          <div class="grid">
-            <div class="footer__block col-3">
-              <div class="logo">ВЕСТА</div>
-            </div>
-            <div class="footer__block col-3">
-              <h3 class="footer__title">ПОМОЩЬ КЛИЕНТАМ</h3>
-              <ul class="footer__menu">
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Политика доставки ></a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Политика возврата ></a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">Контакты ></a>
-                </li>
-                <li class="footer__item">
-                  <a href="#" class="footer__link">О нас ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__block col-3">
-              <h3 class="footer__title">ЗАХОДИТЕ К НАМ</h3>
-              <span class="footer__text"
-                >ул. Арбат, 1а, Москва, 119019, Россия</span
-              >
-            </div>
-            <div class="footer__block col-3">
-              <div class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</div>
-              <div class="footer__social-list">
-                <li class="social__item"><i class="fab fa-vk"></i></li>
-                <li class="social__item"><i class="fab fa-facebook-f"></i></li>
-                <li class="social__item"><i class="fab fa-twitter"></i></li>
-                <li class="social__item"><i class="fab fa-instagram"></i></li>
-              </div>
-            </div>
+        <div class="container grid ">
+          <div class="footer__block col-3">
+            <div class="footer__logo">ВЕСТА</div>
+          </div>
+          <div class="footer__block col-3">
+            <h3 class="footer__title">ПОМОЩЬ КЛИЕНТАМ</h3>
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Политика доставки ></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Политика возврата ></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Контакты ></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">О нас ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block col-3">
+            <h3 class="footer__title">ЗАХОДИТЕ К НАМ</h3>
+            <span class="footer__text"
+              >ул. Арбат, 1а, Москва, 119019, Россия</span
+            >
+          </div>
+          <div class="footer__block col-3">
+            <h3 class="footer__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="fab fa-vk"></i
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
+      </footer>
+      <footer class="copyright">
+        © 2023 ВЕСТА. Сайт создан на
+        <a href="#" class="copyright-link"> Wix.com</a>
       </footer>
     </div>
   </body>
