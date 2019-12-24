@@ -19,5 +19,8 @@
   ],
   "lesson_8": [
     "./src/lesson_8/lesson_8.js"
+  ],
+  "home_work_lesson_6_3": [
+    "./src/home_work_lesson_6_3/home_work_lesson_6_3.js"
   ]
 }

@@ -85,7 +85,6 @@ $list-spacing: 6px;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s;
-    cursor: pointer;
 
     &:hover {
       color: lighten($color: #a9a9a9, $amount: 40);
