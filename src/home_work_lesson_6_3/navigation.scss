@@ -4,10 +4,20 @@
   align-items: center;
   width: 100%;
   background-color: rgba(42, 42, 42, 1);
+
+  @media (max-width: 410px) {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+  }
   &__list {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 410px) {
+      display: none;
+    }
   }
   &__link {
     display: inline-block;
@@ -25,5 +35,40 @@
     &:hover {
       color: #fff;
     }
+  }
+}
+.btn-toggle {
+  display: none;
+  outline: none;
+  transform-origin: top;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: #fff;
+  }
+
+  &:before {
+    top: 33.333%;
+  }
+
+  &:after {
+    bottom: 33.333%;
+  }
+
+  @media (max-width: 410px) {
+    display: flex;
+    justify-content: center;
+    width: 33px;
+    position: relative;
+    height: 33px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
   }
 }

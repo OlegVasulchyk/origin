@@ -1,29 +1,18 @@
-.gallery {
-  border: 1px solid red;
-
-  &__item {
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 270px;
+.block {
+  width: 100%;
+  background: red;
+  height: 100px;
+  border: 2px solid yellow;
+  position: relative;
+  &:after {
+    content: "Block!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
-@media screen and (max-width: $screen-md) {
-  .gallery {
-    &__item {
-      height: 220px;
-      &:nth-child(3) {
-        background-image: url(./images/5.jpg);
-      }
-    }
-  }
-}
-
-@media screen and (max-width: $screen-sm) {
-  .gallery {
-    &__item {
-      height: 220px;
-    }
-  }
+.block-wrapper {
+  padding: 10px;
 }

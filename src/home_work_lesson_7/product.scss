@@ -1,5 +1,4 @@
 .product {
-  width: 100%;
   position: relative;
   &__content {
     position: relative;
@@ -59,12 +58,12 @@
 
   &--sale {
     &:before {
-      content: 'cкидка';
+      content: "cкидка";
       display: block;
       padding: 5px 7px;
       background: rgb(68, 52, 52);
       text-transform: uppercase;
-      color:#fff;
+      color: #fff;
       position: absolute;
       top: 0;
       left: 0;
