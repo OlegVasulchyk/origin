@@ -16,7 +16,20 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -70%);
+
+    @media (max-width: 990px) {
+      top: 30%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+    }
+    @media (max-width: 768px) {
+      font-size: 24px;
+      padding: 9px;
+      text-align: center;
+    }
   }
+
+  // Нижнє підкреслення
   &__link {
     color: #000;
     letter-spacing: 10px;
@@ -24,5 +37,8 @@
     background-size: 100% 1px;
     background-position: 0 1.15em;
     text-shadow: 0.05em 0 white, -0.05em 0 white;
+    @media (max-width: 768px) {
+      letter-spacing: 6px;
+    }
   }
 }

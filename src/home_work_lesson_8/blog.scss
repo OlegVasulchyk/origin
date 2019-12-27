@@ -2,7 +2,11 @@ $hover-color: #d49c59;
 .blog {
   width: 100%;
   border: 1px solid #bdbdbd;
-
+  &__img {
+    @media (max-width: 768px) {
+      min-height: 250px;
+    }
+  }
   &__img--1 {
     background: url(./images/bread.jpeg) center / cover, #382807;
   }
@@ -21,6 +25,9 @@ $hover-color: #d49c59;
 
   &__info {
     padding: 48px 40px;
+    @media (max-width: 480px) {
+      padding: 24px 20px;
+    }
   }
 }
 .info {
@@ -36,6 +43,9 @@ $hover-color: #d49c59;
     padding-bottom: 40px;
     border-bottom: 1px solid #bdbdbd;
     margin-bottom: 20px;
+    @media (max-width: 768px) {
+      padding-bottom: 20px;
+    }
   }
 }
 
@@ -92,17 +102,22 @@ $hover-color: #d49c59;
   color: #000;
   font-weight: normal;
   transition: all 0.3s;
+  @media (max-width: 400px) {
+    font-size: 22px;
+    padding-bottom: 8px;
+  }
   &:hover {
     color: $hover-color;
   }
 }
 
-// Work in only FIREFOX
+// Work in only FIREFOX and Chrome
 .description-info__content {
   overflow: hidden;
   text-overflow: ellipsis;
   -moz-box-orient: vertical;
   display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   color: #000000;
   opacity: 0.8;

@@ -28,7 +28,7 @@
         <button class="btn btn--premium">start now</button>
       </a>
     </header>
-    <main class="main-container">
+    <main class="main-container row container">
       <nav class="nav">
         <ul class="menu">
           <li class="menu__item">
@@ -60,17 +60,20 @@
           </li>
         </ul>
       </nav>
-      <div class="baner">
+      <div class="baner col--3-of-3">
         <h1 class="baner__title">
-          <a href="" class="baner__link">соль и перець</a>
+          <a href="" class="baner__link">соль и перец</a>
         </h1>
       </div>
       <main class="main-content main">
         <ul class="main__list">
           <li class="main__item">
             <article class="blog row">
-              <a href="#" class="blog__img--1 col--4-of-8"></a>
-              <div class="blog__info info col--4-of-8">
+              <a
+                href="#"
+                class="blog__img blog__img--1 col--4-of-8 col col-m-"
+              ></a>
+              <div class="blog__info info col--4-of-8 col col-m-">
                 <header class="info-user user">
                   <div class="icon-user">
                     <a href="#" class="icon-user">|</a>
@@ -78,7 +81,7 @@
                   <div class="user__block">
                     <div>
                       <span class="user__name">Oleh vasulcyk</span>
-                      <i class=" fas fa-crown"></i>
+                      <i class="fas fa-crown"></i>
                     </div>
                     <div class="user__post-metadata">
                       <span>3 дней назад</span>
@@ -115,8 +118,11 @@
           </li>
           <li class="main__item">
             <article class="blog row">
-              <a href="#" class="blog__img--2 col--4-of-8"></a>
-              <div class="blog__info info col--4-of-8">
+              <a
+                href="#"
+                class="blog__img blog__img--2 col--4-of-8 col col-m-"
+              ></a>
+              <div class="blog__info info col--4-of-8 col col-m-">
                 <header class="info-user user">
                   <div class="icon-user">
                     <a href="#" class="icon-user">|</a>
@@ -163,8 +169,11 @@
           </li>
           <li class="main__item">
             <article class="blog row">
-              <a href="#" class="blog__img--3 col--4-of-8"></a>
-              <div class="blog__info info col--4-of-8">
+              <a
+                href="#"
+                class="blog__img blog__img--3 col--4-of-8 col col-m-"
+              ></a>
+              <div class="blog__info info col--4-of-8 col col-m-">
                 <header class="info-user user">
                   <div class="icon-user">
                     <a href="#" class="icon-user">|</a>
@@ -211,8 +220,11 @@
           </li>
           <li class="main__item">
             <article class="blog row">
-              <a href="#" class="blog__img--4 col--4-of-8"></a>
-              <div class="blog__info info col--4-of-8">
+              <a
+                href="#"
+                class="blog__img blog__img--4 col--4-of-8 col col-m-"
+              ></a>
+              <div class="blog__info info col--4-of-8 col col-m-">
                 <header class="info-user user">
                   <div class="icon-user">
                     <a href="#" class="icon-user">|</a>
@@ -258,7 +270,86 @@
             </article>
           </li>
         </ul>
+        <div class="btn__container">
+          <a href="" class="btn-content">Kнопка</a>
+        </div>
+        <ul class="block__list row">
+          <li class="block__item row col--4-of-8 col col--m-">
+            <div class="col--4-of-8">
+              <img src="./images/girl.webp" alt="" class="block__img" />
+            </div>
+            <div class="block__description col--4-of-8">
+              <h3
+                class="title-third title-third--underline title-third--descrption-block"
+              >
+                ОТ СОФИИ С ЛЮБОВЬЮ
+              </h3>
+              <a href="#" class="block__link">Обо мне</a>
+            </div>
+          </li>
+          <li class="block__item row col--4-of-8 col col--m-">
+            <div class="col--4-of-8">
+              <img src="./images/cookbook.webp" alt="" class="block__img" />
+            </div>
+            <div class="block__description col--4-of-8">
+              <h3
+                class="title-third title-third--underline title-third--descrption-block"
+              >
+                МОИ РЕЦЕПТЫ
+              </h3>
+              <dl>
+                <dt class="list-block">Где купить:</dt>
+                <dd class="list-block__item">Москва</dd>
+                <dd class="list-block__item">Дом книги</dd>
+                <dd class="list-block__item">Чук и Гек</dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
       </main>
     </main>
+    <footer class="footer container row">
+      <div class="footer__news-block col--4-of-9 col col--m-3-of-4">
+        <h3 class="title-third title-third--underline">
+          ПОДПИШИТЕСЬ НА НОВОСТИ
+        </h3>
+        <ul class="social">
+          <li class="social__item">
+            <a href="" class="social__link  social__link--footer"
+              ><i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--footer"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--footer"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--footer"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <form class="form col--5-of-9 col col--s-" action="#">
+        <input
+          class="form__input"
+          type="email"
+          placeholder="Добавте эл.почту"
+        />
+        <button type="submit" class="btn-form">OK</button>
+      </form>
+      <div class="col--5-of-9 col col--s- copyright">
+        <span class=""
+          >© 2023 Соль и перец. Сайт создан на
+          <a href="#" class="footer__link">Wix.com</a></span
+        >
+      </div>
+    </footer>
   </body>
 </html>
