@@ -1,0 +1,28 @@
+.baner {
+  min-height: 390px;
+  width: 100%;
+  background: url(./images/banner.webp) center / cover no-repeat, #ababab;
+  position: relative;
+
+  &__title {
+    background-color: #fff;
+    font-size: 33px;
+    font-weight: 1;
+    padding: 17px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 5px solid hsl(0, 0%, 0%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+  &__link {
+    color: #000;
+    letter-spacing: 10px;
+    background: linear-gradient(#000, #000) no-repeat;
+    background-size: 100% 1px;
+    background-position: 0 1.15em;
+    text-shadow: 0.05em 0 white, -0.05em 0 white;
+  }
+}

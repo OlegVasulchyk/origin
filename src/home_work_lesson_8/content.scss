@@ -1,0 +1,10 @@
+.main-content {
+  padding: 40px 10px;
+}
+.main__list {
+  display: flex;
+  flex-direction: column;
+}
+.main__item:not(:last-child) {
+  margin-bottom: 40px;
+}

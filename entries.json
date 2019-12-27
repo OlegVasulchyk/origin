@@ -22,5 +22,8 @@
   ],
   "home_work_lesson_6_3": [
     "./src/home_work_lesson_6_3/home_work_lesson_6_3.js"
+  ],
+  "home_work_lesson_8": [
+    "./src/home_work_lesson_8/home_work_lesson_8.js"
   ]
 }

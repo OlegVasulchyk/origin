@@ -1,0 +1,130 @@
+$hover-color: #d49c59;
+.blog {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+
+  &__img--1 {
+    background: url(./images/bread.jpeg) center / cover, #382807;
+  }
+
+  &__img--2 {
+    background: url(./images/potato.jpeg) center / cover, #382807;
+  }
+
+  &__img--3 {
+    background: url(./images/sassage.jpeg) center / cover, #382807;
+  }
+
+  &__img--4 {
+    background: url(./images/sparga.png) center / cover, #382807;
+  }
+
+  &__info {
+    padding: 48px 40px;
+  }
+}
+.info {
+  display: flex;
+  flex-direction: column;
+
+  &-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__description {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 20px;
+  }
+}
+
+.icon-user {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: mediumblue;
+  color: #fff;
+  font-size: 13px;
+
+  & a {
+    line-height: 30px;
+  }
+}
+.user {
+  &__block {
+    margin-left: 15px;
+    font-size: 12px;
+  }
+
+  &__name {
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  &__post-metadata span:first-child {
+    margin-right: 7px;
+  }
+
+  &__post-metadata {
+    display: flex;
+    align-items: center;
+  }
+  &__post-metadata--circul {
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    background: #000;
+    border-radius: 50%;
+    margin-right: 7px;
+  }
+}
+
+.description-info__title {
+  font-size: 28px;
+  padding-bottom: 16px;
+  color: #000;
+  font-weight: normal;
+  transition: all 0.3s;
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+// Work in only FIREFOX
+.description-info__content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  color: #000000;
+  opacity: 0.8;
+}
+
+.info-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.info-stats {
+  color: #000;
+  opacity: 0.8;
+
+  &__link {
+    color: #000;
+    opacity: 0.8;
+    margin-left: 10px;
+  }
+}
+.like-icon {
+  color: red;
+  font-size: 15px;
+  position: relative;
+}

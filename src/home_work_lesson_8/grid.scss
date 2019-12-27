@@ -1,0 +1,219 @@
+// Namespaces
+// This stops me from being overzealous with enforcing classes
+$grid-namespace: "row" !default;
+$grid-column-namespace: "col" !default;
+
+// $col-groups are the column groups you want
+// For example, $col-groups: (3, 4, 5) will output:
+// .col--n-of-3, .col--n-of-4, [...]
+$col-groups: (3, 4, 5, 6, 8, 9, 12) !default;
+
+// Gutter width
+$gutter-width: 0px !default;
+
+// Breakpoints
+$breakpoint-medium: 768px !default;
+$breakpoint-small: 480px !default;
+
+.#{$grid-namespace} {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: $gutter-width;
+  margin-right: $gutter-width;
+  align-content: flex-start;
+}
+
+.#{$grid-column-namespace} {
+  box-sizing: border-box;
+  min-height: 1px;
+  padding-left: $gutter-width;
+  flex: 1;
+
+  @media (max-width: $breakpoint-medium) {
+    order: 0;
+
+    &[class*="#{$grid-column-namespace}--"] {
+      flex: 0 0 100%;
+    }
+  }
+
+  @media (max-width: $breakpoint-medium) and (min-width: $breakpoint-small) {
+    .#{$grid-namespace}--m-col {
+      flex-direction: column;
+    }
+
+    &[class*="#{$grid-column-namespace}--m-"] {
+      flex: 0 0 100%;
+    }
+
+    &[class*="#{$grid-column-namespace}--order-"] {
+      order: 0;
+    }
+
+    &.#{$grid-column-namespace}--m-first {
+      order: -1;
+    }
+
+    &.#{$grid-column-namespace}--m-last {
+      order: 5;
+    }
+
+    &.#{$grid-column-namespace}--m-order-1 {
+      order: 1;
+    }
+
+    &.#{$grid-column-namespace}--m-order-2 {
+      order: 2;
+    }
+
+    &.#{$grid-column-namespace}--m-order-3 {
+      order: 3;
+    }
+
+    &.#{$grid-column-namespace}--m-order-4 {
+      order: 4;
+    }
+
+    &.#{$grid-column-namespace}--m-1-of-2 {
+      flex: 0 0 percentage(1/2);
+    }
+
+    &.#{$grid-column-namespace}--m-1-of-3 {
+      flex: 0 0 percentage(1/3);
+    }
+
+    &.#{$grid-column-namespace}--m-2-of-3 {
+      flex: 0 0 percentage(2/3);
+    }
+
+    &.#{$grid-column-namespace}--m-1-of-4 {
+      flex: 0 0 percentage(1/4);
+    }
+
+    &.#{$grid-column-namespace}--m-2-of-4 {
+      @extend .#{$grid-column-namespace}--m-1-of-2;
+    }
+
+    &.#{$grid-column-namespace}--m-3-of-4 {
+      flex: 0 0 percentage(3/4);
+    }
+  }
+
+  @media (max-width: $breakpoint-small) {
+    .#{$grid-namespace} {
+      flex-wrap: wrap;
+    }
+
+    .#{$grid-namespace}--s-col {
+      flex-direction: column;
+    }
+
+    &[class*="#{$grid-column-namespace}--s-"] {
+      flex: 0 0 100%;
+    }
+
+    &[class*="#{$grid-column-namespace}--order-"] {
+      order: 0;
+    }
+
+    &.#{$grid-column-namespace}--s-first {
+      order: -1;
+    }
+
+    &.#{$grid-column-namespace}--s-last {
+      order: 5;
+    }
+
+    &.#{$grid-column-namespace}--s-order-1 {
+      order: 1;
+    }
+
+    &.#{$grid-column-namespace}--s-order-2 {
+      order: 2;
+    }
+
+    &.#{$grid-column-namespace}--s-order-3 {
+      order: 3;
+    }
+
+    &.#{$grid-column-namespace}--s-order-4 {
+      order: 4;
+    }
+
+    &.#{$grid-column-namespace}--s-1-of-2 {
+      flex: 0 0 percentage(1/2);
+    }
+
+    &.#{$grid-column-namespace}--s-1-of-3 {
+      flex: 0 0 percentage(1/3);
+    }
+
+    &.#{$grid-column-namespace}--s-2-of-3 {
+      flex: 0 0 percentage(2/3);
+    }
+
+    &.#{$grid-column-namespace}--s-1-of-4 {
+      flex: 0 0 percentage(1/4);
+    }
+
+    &.#{$grid-column-namespace}--s-2-of-4 {
+      @extend .#{$grid-column-namespace}--s-1-of-2;
+    }
+
+    &.#{$grid-column-namespace}--s-3-of-4 {
+      flex: 0 0 percentage(3/4);
+    }
+  }
+}
+
+%span-all {
+  flex: 0 1 percentage(1/1);
+}
+%one-half {
+  flex: 0 1 percentage(1/2);
+}
+%one-third {
+  flex: 0 1 percentage(1/3);
+}
+%two-thirds {
+  flex: 0 1 percentage(2/3);
+}
+%one-quarter {
+  flex: 0 1 percentage(1/4);
+}
+%two-quarters {
+  flex: 0 1 percentage(2/4);
+}
+%three-quarters {
+  flex: 0 1 percentage(3/4);
+}
+%push-span-all {
+  margin-left: percentage(1/1);
+}
+
+// For each of our column groups...
+@each $group in $col-groups {
+  // For each column width from 1 to the column group...
+  @for $i from 1 through $group {
+    .#{$grid-column-namespace}--#{$i}-of-#{$group} {
+      @if percentage($i/$group) == percentage(1/1) {
+        @extend %span-all;
+      } @else if percentage($i/$group) == percentage(1/2) {
+        @extend %one-half;
+      } @else if percentage($i/$group) == percentage(1/3) {
+        @extend %one-third;
+      } @else if percentage($i/$group) == percentage(2/3) {
+        @extend %two-thirds;
+      } @else if percentage($i/$group) == percentage(1/4) {
+        @extend %one-quarter;
+      } @else if percentage($i/$group) == percentage(2/4) {
+        @extend %two-quarters;
+      } @else if percentage($i/$group) == percentage(3/4) {
+        @extend %three-quarters;
+      } @else {
+        flex: 0 1 percentage($i/$group);
+      }
+    }
+  } // end @for
+} // end @each
