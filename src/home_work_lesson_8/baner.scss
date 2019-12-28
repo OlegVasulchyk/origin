@@ -3,6 +3,12 @@
   width: 100%;
   background: url(./images/banner.webp) center / cover no-repeat, #ababab;
   position: relative;
+  @media (max-width: 650px) {
+    min-height: 270px;
+  }
+  @media (max-width: 480px) {
+    min-height: 200px;
+  }
 
   &__title {
     background-color: #fff;

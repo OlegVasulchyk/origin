@@ -6,6 +6,12 @@
 }
 .main-container {
   padding-top: 150px;
+  @media (max-width: 990px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 70px;
+  }
 }
 .main-content {
   padding: 40px 10px;
@@ -52,14 +58,18 @@
 .block {
   &__list {
     margin-bottom: 50px;
-    @media (max-width: 480px) {
-      margin-bottom: 25px;
+    @media (max-width: 768px) {
+      margin-bottom: 10px;
     }
   }
   &__item {
     padding-left: 30px;
     @media (max-width: 768px) {
       margin-bottom: 20px;
+      padding-left: 10px;
+    }
+    @media (max-width: 480px) {
+      padding-left: 0;
     }
   }
   &__img {
