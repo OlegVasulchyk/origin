@@ -25,5 +25,32 @@
   ],
   "home_work_lesson_8": [
     "./src/home_work_lesson_8/home_work_lesson_8.js"
+  ],
+  "lesson_9": [
+    "./src/lesson_9/lesson_9.js"
+  ],
+  "home_work_lesson_9": [
+    "./src/home_work_lesson_9/home_work_lesson_9.js"
+  ],
+  "home_work_lesson_10": [
+    "./src/home_work_lesson_10/home_work_lesson_10.js"
+  ],
+  "home_work_lesson_11": [
+    "./src/home_work_lesson_11/home_work_lesson_11.js"
+  ],
+  "work_lesson_10": [
+    "./src/work_lesson_10/work_lesson_10.js"
+  ],
+  "work_lesson_12": [
+    "./src/work_lesson_12/work_lesson_12.js"
+  ],
+  "work_lesson_13": [
+    "./src/work_lesson_13/work_lesson_13.js"
+  ],
+  "home_": [
+    "./src/home_/home_.js"
+  ],
+  "work_lesson_14": [
+    "./src/work_lesson_14/work_lesson_14.js"
   ]
 }

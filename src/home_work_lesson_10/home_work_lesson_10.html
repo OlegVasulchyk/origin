@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://localhost:35729/livereload.js"></script>
+    <title key="title"></title>
+  </head>
+  <body>
+    <div class="output"></div>
+    <script>
+      var input = "javascript is awesome";
+      var output = "";
+      let word = prompt("enter word");
+      let vowelCount = 0;
+      for (let i = 0; i < word.lenght; i++) {
+        const char = word[i].toLowerCase();
+        if (
+          char[i] === "a" ||
+          char[i] === "e" ||
+          char[i] === "u" ||
+          char[i] === "y" ||
+          char[i] === "o" ||
+          char[i] === "i"
+        ) {
+          vowelCount++;
+        }
+      }
+    </script>
+  </body>
+</html>

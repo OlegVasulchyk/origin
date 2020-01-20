@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://localhost:35729/livereload.js"></script>
+    <title key="title"></title>
+  </head>
+  <body>
+    <h1 id="header">Hello from work_lesson_10</h1>
+    <button id="btn">button</button>
+    <script>
+      //
+      // const a = parseInt(prompt("A"));
+      // const b = parseInt(prompt("B"));
+      // add(a, b);
+
+      // let colors = ["red", "green", "yellow"];
+      // let color = colors[Math.floor(Math.random() * colors.length)];
+      // console.log(color);
+
+      // let words = [
+      //   "hello word",
+      //   "tests",
+      //   "johh",
+      //   "ababababababaabb",
+      //   "ababfbmdfklnbdflknfdklnmflkn",
+      //   "test"
+      // ];
+      // let maxWordsLength = 0;
+      // let longestWord;
+      // for (i = 0; i < words.length; i++) {
+      //   if (maxWordsLength < words[i].length) {
+      //     maxWordsLength = words[i].length;
+      //     longestWord = words[i];
+      //   }
+      // }
+      // console.log(longestWord);
+
+      // newWords = [];
+      // for (i = 0; i < words.length; i++) {
+      //   let mapNumber = words[i].length;
+      //   newWords.push(mapNumber);
+      // }
+      // console.log(newWords);
+
+      // let longestWords = "";
+      // for (i = 0; i < words.length; i++) {
+      //   if (longestWord < words[i].length) {
+      //     longestWords = words[i];
+      //   }
+      // }
+      // console.log(longestWord);
+
+      // const shoppingCart = [
+      //   {
+      //     name: "iphone",
+      //     prise: 250,
+      //     id: "id1"
+      //   },
+      //   {
+      //     name: "iphone 2",
+      //     prise: 5000,
+      //     id: "id2"
+      //   },
+      //   {
+      //     name: "Macbook",
+      //     prise: 2500,
+      //     id: "id3"
+      //   },
+      //   {
+      //     name: "macbook pro",
+      //     prise: 3500,
+      //     id: "id4"
+      //   }
+      // ];
+      // let totalPrice = 0;
+      // for (i = 0; i < shoppingCart.length; i++) {
+      //   totalPrice += shoppingCart[i].prise;
+      // }
+      // console.log(totalPrice);
+
+      // filterPrice = [];
+      // for (i = 0; i < shoppingCart.length; i++) {
+      //   if (shoppingCart[i].prise >= 2500) {
+      //     filterPrice.push(shoppingCart[i]);
+      //   }
+      // }
+      // console.log(filterPrice);
+
+      // let areArraysSame = function(arr1, arr2) {
+      //   if (arr1.length !== arr2.length) {
+      //     return false;
+      //   }
+
+      //   for (let i = 0; i < arr1.length; i++) {
+      //     if (arr1[i] !== arr2[i]) {
+      //       return false;
+      //     }
+      //   }
+      //   return true;
+      // };
+
+      // const y = areArraysSame([1, 2, 3], [3, 4, 5]);
+      // const o = areArraysSame([5, 5, 6], [5, 5, 6]);
+      // console.log(o);
+
+      // maxNumber = 0;
+      // let numbers = [0, 25, 100, 50, 350, 123, 800];
+      // for (i = 0; i < numbers.length; i++) {
+      //   if (maxNumber < numbers[i]) {
+      //     maxNumber = numbers[i];
+      //   }
+      // }
+      // console.log(maxNumber);
+
+      // let newNumbers = [];
+      // for (i = 0; i < numbers.length; i++) {
+      //   if (numbers[i] >= 100) {
+      //     newNumbers.push(numbers[i]);
+      //   }
+      // }
+      // console.log(newNumbers);
+
+      // function greet() {
+      //   const name = prompt("enter", "");
+      //   alert("hello" + name);
+      // }
+      // greet();
+      // header.onclick = greet;
+      // function theNumberOfLetters() {
+      //   string = prompt("Please word", "");
+
+      //   let numberWords = string.length;
+      //   alert(numberWords);
+      // }
+      // theNumberOfLetters();
+      // btn.onclick = theNumberOfLetters;
+      // function add() {
+      //   const a = parseInt(prompt("enter a"));
+      //   const b = parseInt(prompt("Enter b"));
+      //   alert(a + b);
+      // }
+      // add();
+      // function add(a, b) {
+      //   if (!a || !b || isNaN(a) || isNaN(b)) {
+      //     console.error("INPUT INCORRECT");
+      //   }
+      //   return a + b;
+      // }
+
+      // const a = parseInt(prompt("A"));
+      // const b = parseInt(prompt("B"));
+      // let t = add(a, b);
+      // alert(t);
+
+      function isSameArray(arrayA, arrayB) {
+        if (arrayA.length !== arrayB.length) {
+          return false;
+        }
+        for (i = 0; i < arrayA.length; i++) {
+          if (arrayA[i] !== arrayB[i]) {
+            return false;
+          }
+        }
+        return true;
+      }
+      console.log(isSameArray([10, 10, 10], [10, 10, 10]));
+    </script>
+  </body>
+</html>
