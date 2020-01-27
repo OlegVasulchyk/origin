@@ -28,4 +28,4 @@ garland(300);
 
 // body.appendChild(article);
 
-// commentForm();
+commentForm();

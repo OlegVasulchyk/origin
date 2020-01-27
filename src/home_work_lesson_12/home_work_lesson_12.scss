@@ -1,0 +1,42 @@
+.traffic-lighter {
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+
+  &__light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lavender;
+    margin-bottom: 15px;
+
+    // &--red {
+    //   background-color: rgb(245, 133, 133);
+    // }
+    // &--orange {
+    //   background-color: rgb(253, 206, 117);
+    // }
+    // &--green {
+    //   background-color: rgb(130, 214, 130);
+    // }
+  }
+}
+
+.active {
+  &__red {
+    background-color: red;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.795);
+  }
+  &__orange {
+    background-color: orange;
+    box-shadow: 0 0 10px 5px rgba(255, 166, 0, 0.801);
+  }
+  &__green {
+    background-color: green;
+    box-shadow: 0 0 10px 5px rgba(0, 128, 0, 0.801);
+  }
+}

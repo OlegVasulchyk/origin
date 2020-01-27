@@ -3,4 +3,9 @@
   height: 50px;
   border-radius: 50%;
   border: 2px solid grey;
+  margin: 20px;
+}
+.toggled {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }

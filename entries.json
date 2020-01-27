@@ -52,5 +52,20 @@
   ],
   "work_lesson_14": [
     "./src/work_lesson_14/work_lesson_14.js"
+  ],
+  "home_work_lesson_14": [
+    "./src/home_work_lesson_14/home_work_lesson_14.js"
+  ],
+  "home_work_lesson_12": [
+    "./src/home_work_lesson_12/home_work_lesson_12.js"
+  ],
+  "work_lesson_15": [
+    "./src/work_lesson_15/work_lesson_15.js"
+  ],
+  "work_lesson_16": [
+    "./src/work_lesson_16/work_lesson_16.js"
+  ],
+  "home_work_lesson_15": [
+    "./src/home_work_lesson_15/home_work_lesson_15.js"
   ]
 }

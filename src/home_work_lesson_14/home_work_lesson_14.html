@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://localhost:35729/livereload.js"></script>
+    <title key="cars"></title>
+  </head>
+  <body>
+    <h1 id="heading">Hello from home_work_lesson_14</h1>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+      // Meтод 1
+      // let Car = function(x, y) {
+      //   this.x = x;
+      //   this.y = y;
+      // };
+      // const drawCar = car => {
+      //   const carHtml = '<img src="./image/car.png">';
+      //   const carElement = $(carHtml);
+      //   carElement.css({
+      //     position: "absolute",
+      //     left: car.x,
+      //     top: car.y
+      //   });
+
+      //   $("body").append(carElement);
+      // };
+
+      // let tesla = new Car(20, 20);
+      // let nissan = new Car(100, 200);
+
+      // drawCar(nissan);
+      // drawCar(tesla);
+
+      // МЕТОД 2
+
+      let Car = function(x, y) {
+        this.x = x;
+        this.y = y;
+      };
+      Car.prototype.draw = function() {
+        const carHtml = '<img src="./image/car.png">';
+        this.carElement = $(carHtml);
+        this.carElement.css({
+          position: "absolute",
+          left: this.x,
+          top: this.y
+        });
+
+        $("body").append(this.carElement);
+      };
+
+      Car.prototype.moveRight = function() {
+        this.x += 5;
+
+        this.carElement.css({
+          left: this.x,
+          top: this.y
+        });
+      };
+
+      const tesla = new Car(20, 20);
+      const nissan = new Car(100, 200);
+
+      tesla.draw();
+      nissan.draw();
+      const tesslaFinish = () => {
+        for (let i = 20; i < nissan.x; i = i + 5) {
+          console.log(i);
+          if (tesla.x < nissan.x) {
+            tesla.moveRight();
+          }
+        }
+      };
+      tesslaFinish();
+      // intervalId = setInterval(() => {
+
+      // });
+    </script>
+  </body>
+</html>
