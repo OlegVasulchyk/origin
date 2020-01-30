@@ -12,6 +12,29 @@
   </head>
   <body>
     <h1 id="heading">Hello from home_work_lesson_14</h1>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script src="http://localhost:35729/livereload.js"></script>
+        <title key="title"></title>
+      </head>
+      <body>
+        <div class="container">
+          <div class="container__block active"></div>
+          <div class="container__block"></div>
+          <div class="container__block"></div>
+          <div class="container__block"></div>
+          <button class="prev">PREV</button>
+          <button class="next">NEXT</button>
+        </div>
+      </body>
+    </html>
 
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
     <script>
@@ -40,45 +63,45 @@
 
       // МЕТОД 2
 
-      let Car = function(x, y) {
-        this.x = x;
-        this.y = y;
-      };
-      Car.prototype.draw = function() {
-        const carHtml = '<img src="./image/car.png">';
-        this.carElement = $(carHtml);
-        this.carElement.css({
-          position: "absolute",
-          left: this.x,
-          top: this.y
-        });
+      // let Car = function(x, y) {
+      //   this.x = x;
+      //   this.y = y;
+      // };
+      // Car.prototype.draw = function() {
+      //   const carHtml = '<img src="./image/car.png">';
+      //   this.carElement = $(carHtml);
+      //   this.carElement.css({
+      //     position: "absolute",
+      //     left: this.x,
+      //     top: this.y
+      //   });
 
-        $("body").append(this.carElement);
-      };
+      //   $("body").append(this.carElement);
+      // };
 
-      Car.prototype.moveRight = function() {
-        this.x += 5;
+      // Car.prototype.moveRight = function() {
+      //   this.x += 5;
 
-        this.carElement.css({
-          left: this.x,
-          top: this.y
-        });
-      };
+      //   this.carElement.css({
+      //     left: this.x,
+      //     top: this.y
+      //   });
+      // };
 
-      const tesla = new Car(20, 20);
-      const nissan = new Car(100, 200);
+      // const tesla = new Car(20, 20);
+      // const nissan = new Car(100, 200);
 
-      tesla.draw();
-      nissan.draw();
-      const tesslaFinish = () => {
-        for (let i = 20; i < nissan.x; i = i + 5) {
-          console.log(i);
-          if (tesla.x < nissan.x) {
-            tesla.moveRight();
-          }
-        }
-      };
-      tesslaFinish();
+      // tesla.draw();
+      // nissan.draw();
+      // const tesslaFinish = () => {
+      //   for (let i = 20; i < nissan.x; i = i + 5) {
+      //     console.log(i);
+      //     if (tesla.x < nissan.x) {
+      //       tesla.moveRight();
+      //     }
+      //   }
+      // };
+      // tesslaFinish();
       // intervalId = setInterval(() => {
 
       // });
