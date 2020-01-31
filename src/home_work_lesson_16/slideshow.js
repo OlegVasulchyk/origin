@@ -1,18 +1,6 @@
-function Slide(root, slideData) {
-  this.root = root;
-  this.slideData = slideData;
-}
-
-Slide.prototype.render = function() {
-  const container = document.createElement("li");
-  container.classList.add("slide");
-  const img = document.createElement("img");
-  img.classList.add("slide__img");
-  img.src = this.slideData.preview.high;
-
-  container.appendChild(img);
-  this.root.appendChild(container);
-};
+import { Slide } from "./Slide.js";
+import { Control } from ".control.js";
+import "./slideshow.scss";
 
 function SlideShow(root = document.querySelector("body")) {
   this.root = root;
@@ -21,17 +9,61 @@ function SlideShow(root = document.querySelector("body")) {
   this.slides = [];
 }
 SlideShow.prototype.init = function() {
+  this.renderContainer();
   this.getSlides();
   this.renderSlides();
+  this.renderControl();
 };
 
 SlideShow.prototype.renderSlides = function() {
-  const ul = document.createElement("ul");
-  this.slides = this.data.map(item => {
-    const slide = new Slide(ul, item);
-    slide.render();
+  const fragment = document.createDocumentFragment();
+  this.slides = this.data.map((item, i) => {
+    const slide = new Slide(
+      fragment,
+      item,
+      {
+        transform: `translateX (-${100 * i}%)`
+      },
+      i === this.activeSlide
+    );
+    return;
   });
-  this.root.appendChild(ul);
+  this.container.appendChild(
+    createNode("ul", ["slideshow__slides"], undefined, fragment)
+  );
+};
+
+SlideShow.prototype.renderContainer = function() {
+  this.container = document.createElement("div");
+  this.container.classList.add("slideshow");
+  this.root.appendChild(this.container);
+};
+
+SlideShow.prototype.renderControl = function() {
+  controlsWrapper = document.createElement("div");
+  controlsWrapper.classList.add("slideshow__controls");
+  const controls = [
+    {
+      title: "<<<",
+      onClick: () => console.log("To first")
+    },
+    {
+      title: "<",
+      onClick: () => console.log("Prev")
+    },
+    {
+      title: ">",
+      onClick: () => console.log("Next")
+    },
+    {
+      title: ">>>",
+      onClick: () => console.log("To last")
+    }
+  ];
+  controls.forEach(
+    ({ title, onClick }) => new Control(controlsWrapper, title, onClick)
+  );
+  this.container.appendChild(controlsWrapper);
 };
 
 SlideShow.prototype.getSlides = function() {
@@ -41,7 +73,6 @@ SlideShow.prototype.getSlides = function() {
   xhr.onload = () => {
     const { list } = JSON.parse(xhr.response);
     this.data = list;
-    console.log(this.data);
   };
 };
 
