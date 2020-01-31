@@ -1,0 +1,32 @@
+$container-size: 300px;
+$shadow-color: #0000003b;
+
+.slideshow {
+  max-width: $container-size;
+  width: 100%;
+  box-shadow: 1px 1px 0 0 $shadow-color;
+  position: relative;
+}
+
+.slideshow__slides {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.slideshow__slides > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.slideshow__controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow__controls > * {
+  flex-grow: 1;
+}

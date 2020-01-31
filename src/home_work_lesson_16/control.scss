@@ -1,0 +1,14 @@
+.control {
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  font-size: 1rem;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.control:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

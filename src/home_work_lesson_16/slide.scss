@@ -1,0 +1,16 @@
+.slide {
+  list-style: none;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slide__img {
+  width: 100%;
+  display: block;
+}
